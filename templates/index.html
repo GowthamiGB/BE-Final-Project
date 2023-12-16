@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom: 0">
+        <h1>
+            Food Identification and Calorie Estimation<br /><br /> Fitstation
+        </h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Introduction</h2>
+                <p>
+                    Each year, approximately 6,78,000 deaths are caused in the United States of America due to unhealthy diet. A typical American diet is too high in calories, fat, sugars, sodium, etc. Hence, people have became more proactive when it comes to health matters.
+                    Services like eating habit recorder and calorie/nutrition calculator have became extremely popular. They can make users aware of problems like obesity, cancer, diabetes, heart-disease, etc. that can be caused by unhealthy diets. Most
+                    of these services require the users to manually select a food item from a hierarchical menu which is a time consuming process and not so user friendly.
+                </p>
+                <p>
+                    An user-interactive system that takes food images as an input, recognizes the food automatically and gives the nutritional-facts as an output will save a lot of time.
+                </p>
+                <h3>Click here to start!</h3>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active">
+                        <a href="/recognize">Food Image Recognition & Nutrition Viusalization System</a
+              >
+            </li>
+          </ul>
+          <hr class="hidden-sm hidden-md hidden-lg" />
+        </div>
+        <div class="col-sm-6">
+          <img
+            src="{{ img }}"
+            alt="food photo"
+            width="550"
+            height="400"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Identification and Calorie Estimation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans Condensed', sans-serif;
+            background-image: url('/static/uploads/blackk2.jpg');
+        }
+        
+        .jumbotron {
+            background-color: #fbb904;
+            color: #030303;
+            padding: 70px 30px;
+            margin-bottom: 0;
+        }
+        
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0;
+        }
+        
+        .container {
+            margin-top: 30px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #f6e70f;
+        }
+        
+        p {
+            font-size: 1.2em;
+            color: #f9df83
+        }
+        
+        .btn-primary {
+            background-color: #f1bc0e;
+            color: black;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #f9c509;
+            border: none;
+        }
+        
+        img {
+            border: 2px solid #6EA8E6;
+            border-radius: 5px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .jumbotron {
+                padding: 50px 10px;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>
+            Fitstation<br/>Food Identification and Calorie Estimation
+        </h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Introduction</h2>
+                <p>
+                    Each year, approximately 6,78,000 deaths are caused in the United States of America due to unhealthy diet. A typical American diet is too high in calories, fat, sugars, sodium, etc. Hence, people have become more proactive when it comes to health matters.
+                    Services like eating habit recorder and calorie/nutrition calculator have become extremely popular. They can make users aware of problems like obesity, cancer, diabetes, heart-disease, etc. that can be caused by unhealthy diets. Most
+                    of these services require the users to manually select a food item from a hierarchical menu which is a time consuming process and not so user friendly.
+                </p>
+                <p>
+                    An interactive system that takes food images as an input, recognizes the food automatically, and gives the nutritional facts as an output will save a lot of time.
+                </p>
+                <a href="/recognize" class="btn btn-primary btn-lg">Click here to start!</a>
+            </div>
+            <div class="col-sm-6">
+                <img src="{{ img }}" alt="food photo" width="550" height="400" />
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
